@@ -33,6 +33,6 @@ First you need Anaconda2 to perform analysis, especially jupyter notebook. Follo
 - You will be prompted for a username and password. Please ask Farid or Eirik.
 - As a start, you can download one daily data set and play with it.
 - To download all the data from the beginning (since the detector started to run), run the "download_all.py" on your terminal and choose your favorite destination folder to store the data.
-- The data files are in .csv format which can be read for example in Excel.
+- The data files are in .csv format which can be read for example in Excel but we will use pandas in jupyter notebook for the actual analysis.
 - There are three different types of data files which end with "summary_Trending.csv", "summary_Header.csv" and "summary_Weather.csv". Details on the different physical variables recorded by the detector will be available later.
-- In the folder "Analysis_Example" you will find an example notebook which contains histograms and plots.
+- In the folder "Analysis_Example" you will find an example notebook which contains some plots.
