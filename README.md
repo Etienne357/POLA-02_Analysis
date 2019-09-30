@@ -30,9 +30,9 @@ First you need Anaconda2 to perform analysis, especially jupyter notebook. Follo
 ## Analysis on the Extreme Energy Events (EEE)  data
 
 - You can download the data from the website https://iatw.cnaf.infn.it/eee/monitor/dqmreport2/POLA-02/?C=M;O=D
-- You will be prompted for a username and password. Please ask Farid or Eirik.
+- You will be prompted for a username and password. Please consult Farid or Eirik.
 - As a start, you can download one daily data set and play with it.
-- To download all the data from the beginning (since the detector started to run), run the "download_all.py" on your terminal and choose your favorite destination folder to store the data.
-- The data files are in .csv format which can be read for example in Excel but we will use pandas in jupyter notebook for the actual analysis.
-- There are three different types of data files which end with "summary_Trending.csv", "summary_Header.csv" and "summary_Weather.csv". Details on the different physical variables recorded by the detector will be available later.
+- The data files are in .csv or .root format which can be read using pandas in jupyter notebook. The .root format is easier to download since all the summary (Trending, Header and Weather) files are embedded into one root file as different trees (ROOT terminology). On the other hand, for each data set, there are three csv files to be downloaded separately. Details on how to read the root and csv files are given in the "Analysis_example" folder.  
+- To download all the data in .root format from the beginning (since the detector started to run), run the "download_all.py" on your terminal and choose your favorite destination folder to store the data.
 - In the folder "Analysis_Example" you will find an example notebook which contains some plots.
+- Details on the different physical variables recorded by the detector will be available soon.
