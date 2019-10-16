@@ -35,5 +35,6 @@ First you need Anaconda2 to perform analysis, especially jupyter notebook. Follo
 - To download all the data in csv or rot format from the beginning (since the detector started to run), run the "download_all_csv.py" or "download_all_csv.py" on your terminal.
 -- You should change the download destination folder from the script in the wget function
 -- Inside the script, you can modify folder_list1 to accomodate the latest data sets.
+-- You need the wget module to download files in Python. Do `pip install wget`
 - In the folder "Analysis_Example" you will find an example notebook which contains some plots.
 - Details on the different physical variables recorded by the detector will be available soon.
