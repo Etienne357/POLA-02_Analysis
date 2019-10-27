@@ -1,6 +1,8 @@
 # POLA-02_Analysis
 
-This git page has been created to perform some analyses (plots,...) on the POLA-02 data. It is still under construction.
+This git page has been created to perform some analyses (plots,...) on the POLA-02 data. it is stil work in progress.
+
+To download all the material from this git repository do ´git clone https://github.com/Etienne357/POLA-02_Analysis.git´ on your terminal.
 
 First you need Anaconda2 to perform analysis, especially jupyter notebook. Follow the following instructions to set up Anaconda and the relevant packages.
 
