@@ -4,7 +4,7 @@ This git page has been created to perform some analyses (plots,...) on the POLA-
 
 To download all the material from this git repository do `git clone https://github.com/Etienne357/POLA-02_Analysis.git` on your terminal.
 
-First you need Anaconda2 to perform analysis, especially jupyter notebook. Follow the following instructions to set up Anaconda and the relevant packages.
+First you need Anaconda2 to perform analysis, especially jupyter notebook. Follow the instructions below to set up Anaconda and the relevant packages.
 
 ## Anaconda setup
 
