@@ -41,5 +41,5 @@ for i in range(len(folder_list)):
 
     for link in soup.find_all('a'):
         if (filef == 1 and link.get('href').endswith(".csv")) or (filef == 2 and link.get('href').endswith(".root")) or (filef == 3 and (link.get('href').endswith(".csv") or link.get('href').endswith(".root"))):
-            print "Gets ", link.get('href')
-            #wget.download(url+"/"+link.get('href'),'/home/eirikgr/Documents/data_polar')
+            #print "Gets ", link.get('href')
+            wget.download(url+"/"+link.get('href'),'/home/eirikgr/Documents/data_polar')
