@@ -3,14 +3,14 @@
 This git page has been created to perform some analyses on the POLA-02 data.
 
 Start cloning the git repository
-'''
+```
 git clone https://github.com/Etienne357/POLA-02_Analysis.git
-'''
-Start with downloading the data files (this may take some time) using the scripts 'download_all.py'. The script asks you which type of file you like to download (csv, root or both). They contain the same information, but in different format. In the 'Analysis_Example'-folder there are some analysis examples using both of the input formats. Remember to change the folder where you want to save the data files (last line of the scripts). Then, simply do
+```
+Start with downloading the data files (this may take some time) using the scripts `download_all.py`. The script asks you which type of file you like to download (csv, root or both). They contain the same information, but in different format. In the `Analysis_Example`-folder there are some analysis examples using both of the input formats. Remember to change the folder where you want to save the data files (last line of the scripts). Then, simply do
 
-'''
+```
 python download_all.py
-'''
+```
 
 And the download will start.
 
