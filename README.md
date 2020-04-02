@@ -1,22 +1,35 @@
 # POLA-02_Analysis
 
-This git page has been created to perform some analyses on the POLA-02 data.
+This git page has been created to perform analyses using data from the POLA detectors.
 
 Start cloning the git repository
 ```
 git clone https://github.com/Etienne357/POLA-02_Analysis.git
 ```
-Start with downloading the data files (this may take some time) using the scripts `download_all.py`. The script asks you which type of file you like to download (csv, root or both). They contain the same information, but in different format. In the `Analysis_Example`-folder there are some analysis examples using both of the input formats. Remember to change the folder where you want to save the data files (last line of the scripts). Then, simply do
-
+## Downloadind data files
+Start with downloading the data files (this may take some time) by simply doing 
 ```
 python download_all.py
 ```
+Remember to define the directory where you want to save the data files (last line of the script). The script asks you which type of file you like to download (csv, root or both). They contain the same information, but in different formats (see below). In order to download all the data from all three of the POLA detectors simply change the URL (on line 34) to contain `POLA-01`, `POLA-02` or `POLA-03` and run the script again. Remember to change the output directory so that you put the data from the various detectors in different folders. For the script to work you will need to have wget, installed by doing `pip install wget`
 
-And the download will start.
+## Analysing data 
+You can read in the ROOT files in python using [uproot](https://github.com/scikit-hep/uproot), without having to install ROOT. For CSV files there are alredy built-in functions in python to convert directly CSV to e.g. pandas ([pandas.read_csv](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.read_csv.html)). Please look at the following two notebooks on how to read in ROOT or CSV files into data frames in python (means: no ROOT needed), respectively
 
-You'd need jupyter notebook for running the analysis examples. Either install it stand-alone or follow the instructions below to set up Anaconda and the relevant packages.
+* Analysis_Example/test_Polar_csv.ipynb
+* Analysis_Example/test_Polar_uproot.ipynb
 
-## Anaconda setup
+For the latter you would need to install `uproot`. If you like to use ROOT you can use the complete example provided in 
+
+* Analysis_Example/RootAnaExample.py
+
+This script can be run by simply writing `python -i RootAnaExample.py <directory containing data>`. See further comments inline. 
+
+## Software setup
+
+If you want you can do the analysis in jupyter notebook. Either install it stand-alone or follow the instructions below to set up Anaconda and the relevant packages. `Uproot` can be installed through pip indstall (see README file of [uproot package](https://github.com/scikit-hep/uproot)). You can also do the analysis using the ROOT package.
+
+### Anaconda setup
 
 1. Download Anaconda for linux from [https://repo.anaconda.com/archive/Anaconda2-2018.12-Linux-x86_64.sh](https://www.anaconda.com/download/)
 2. Following the installation instructions at [http://docs.anaconda.com/anaconda/install/linux/](http://docs.anaconda.com/anaconda/install/linux/)
