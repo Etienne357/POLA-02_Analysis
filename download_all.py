@@ -31,7 +31,7 @@ for single_date in daterange(start_date, end_date):
 
 for i in range(len(folder_list)):
     
-    url = "https://iatw.cnaf.infn.it/eee/monitor/dqmreport2/POLA-02/"+folder_list[i]
+    url = "https://iatw.cnaf.infn.it/eee/monitor/dqmreport2/POLA-01/"+folder_list[i]
 
     print "\nDownloading file %i/%i (now: %s)" %(i,len(folder_list),folder_list[i])
     
@@ -42,4 +42,4 @@ for i in range(len(folder_list)):
     for link in soup.find_all('a'):
         if (filef == 1 and link.get('href').endswith(".csv")) or (filef == 2 and link.get('href').endswith(".root")) or (filef == 3 and (link.get('href').endswith(".csv") or link.get('href').endswith(".root"))):
             #print "Gets ", link.get('href')
-            wget.download(url+"/"+link.get('href'),'/home/eirikgr/Documents/data_polar')
+            wget.download(url+"/"+link.get('href'),'/home/eirikgr/Documents/data_polar/POLA01/')
